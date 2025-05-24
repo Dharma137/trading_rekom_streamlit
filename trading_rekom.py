@@ -1,4 +1,6 @@
-import streamlit as st
+modal = st.number_input("Modal akun ($):", min_value=0.0)
+risk_persen = st.number_input("Risk per trade (%):", min_value=0.0, max_value=100.0, value=1.0)
+stop_loss_poin = st.number_input("Jarak Stop Loss (poin):", min_value=0.0)import streamlit as st
 
 st.title("Rekomendasi Entry Trading + Kalkulasi Lot")
 
